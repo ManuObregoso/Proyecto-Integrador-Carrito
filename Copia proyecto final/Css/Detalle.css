@@ -1,0 +1,93 @@
+body{
+    width: 100vw;
+    height: 100vw;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    
+}
+
+
+
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  .card .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    
+  }
+
+.Back, .Add{
+    width: 20%;
+    height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    margin: 1rem;
+}
+
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: 33.333333%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      width: 25%;
+    }
+  }
+
+
+  @media (max-width: 600px) {}
+
+
+
+
+
+
+  @media screen and (min-width:601px) and (max-width:805px) {
+
+
+
+
+
+  }
