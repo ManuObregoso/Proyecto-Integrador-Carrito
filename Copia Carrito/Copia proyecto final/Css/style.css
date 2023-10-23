@@ -1,0 +1,203 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    
+}
+.Principal {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(128, 128, 128);
+    gap: 1rem;
+  }
+
+
+
+  .titulo {
+    font-size: 2.5rem;
+    width: 45%;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+   
+  }
+
+.fa-house{
+   font-size: 25px;
+}
+
+.fa-shopping-cart{
+    font-size: 25px;
+}
+     
+   
+
+
+/* Contenedor de Cards con los productos */
+.Container{
+    width: 100%;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    
+    
+    
+}
+/*  Estructura de cada Card */
+.Container .Card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.Container .Card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Container .Card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.Container .Card h4{
+    font-weight: 600;
+}
+
+.Container .Card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Container .Card .btn {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+
+/* Boton Delete */
+.delete {
+    width: 17px;
+    height: 17px;
+}
+.Icono{
+    width: 40px;
+    height: 40px;
+    margin-top: 2rem ;
+    margin-left:  3.5rem ;
+}
+
+.btn {
+    width: 70px;
+    height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    margin: 5px;
+}
+
+/*  media queries */
+
+@media (max-width: 568px) {
+    .Principal{
+        
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    .titulo {
+        font-size: 1rem;
+        
+      }
+        /*  Estruct3ura de cada Card */
+        .Container .Card{
+          width: 35%;
+          height: 220px;
+          margin: 0.2;
+          border-radius: 8px;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          margin-top: 0.5;
+          text-align: center;
+          transition: all 0.25s;
+        }
+
+        .Container .Card img{
+            width: 50px;
+            height: 40px;
+            
+            
+        }
+        .Container .Card h4{
+            font-size: 0.8rem;
+        }
+        .Container .Card .Price{
+            font-size: 0.7rem;
+        }
+        .Container .Card .Brand{
+            font-size: 0.6rem;
+        }
+        .Container .Card .btn{
+            font-size: 0.4rem;
+            width: 35px;
+            height: 20px;
+            text-align: center;
+            align-items: center;
+        }
+        .Icon {
+            width: 60px;
+            height: 30px;
+          }
+}   
+
+
+/* @media screen and (min-width:601px) and (max-width:805px) {
+    .Principal{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+   
+    
+} */
+ 
+  
+
+
+    
+
+  
+ 
