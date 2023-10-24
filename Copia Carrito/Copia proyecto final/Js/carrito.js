@@ -1,3 +1,4 @@
+
 const insumos = async () => {
     try {
       const respuesta = await  fetch("Js/productos.json")
@@ -31,8 +32,6 @@ const showCart = (productos) => {
       <span>$${item.price}</span>  
       `;
 
-       
-  
 
       const formQuantity = document.createElement("form")
       const btnAdd = document.createElement("button")
@@ -45,9 +44,9 @@ const showCart = (productos) => {
       btnAdd.setAttribute("type","button")
       btnMinus.setAttribute("type","button")
       btnRemove.setAttribute("type","button")
-      btnAdd.className="btn btn-add fa-solid fa-plus"
-      btnMinus.className="btn btn-minus fa-solid fa-minus"
-      btnRemove.className="btn btn-remove fa-solid fa-trash"
+      btnAdd.className="btn-add fa-solid fa-plus"
+      btnMinus.className="btn-min fa-solid fa-minus"
+      btnRemove.className="fa-solid fa-trash"
       btnAdd.onclick = (e) => setQuantity(item,e.target.className)
       btnMinus.onclick = (e) => setQuantity(item,e.target.className)
       btnRemove.onclick = (e) => removeItem(item)
@@ -123,4 +122,20 @@ Principal.addEventListener("click", e =>{
     location.assign("./index.html")
 })
 
+const Comprar = document.querySelector(`.InfoCart`);
+
+Comprar.addEventListener("click", e => {
+  e.preventDefault()
+  let cart= localStorage.getItem(`cart`)
+  if(e.target.classList.contains(`btn-comprar`))
+  Swal.fire({
+    
+    title: 'Gracias Por Su Compra!',
+    text: 'En breve nos contactaremos',
+    imageUrl: 'https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ5dGVzfGVufDB8fDB8fHww',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+})
 
