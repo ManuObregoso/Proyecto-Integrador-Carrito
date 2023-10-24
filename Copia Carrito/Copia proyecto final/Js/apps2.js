@@ -111,7 +111,7 @@ if(cart.length <1){
   })
 }
 
-// location.reload()
+ 
 }
 
 

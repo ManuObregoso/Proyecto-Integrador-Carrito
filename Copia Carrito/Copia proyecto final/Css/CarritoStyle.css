@@ -78,9 +78,9 @@
     .carrito{
       display: flex;
       flex-direction: column;
-      width: 95%;
+      width: 90%;
       height: 300px;
-      margin-left: 0.5rem;
+      margin-left: 1rem;
     }
     .InfoCart{
       width: 90%;
@@ -123,4 +123,21 @@ font-size: 8px;
   background: #7d2ae8;
   color: white;
 }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+
+    .carrito{
+      width: 90%;
+    }
+
+    .InfoCart{
+      width: 90%;
+    }
+    .descri-prod{
+      width: 90%;
+    }
+
+
+
   }
