@@ -137,5 +137,7 @@ Comprar.addEventListener("click", e => {
     imageHeight: 200,
     imageAlt: 'Custom image',
   })
+
+  
 })
 

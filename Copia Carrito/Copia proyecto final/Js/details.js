@@ -110,7 +110,17 @@ const CarritoIr = document.querySelector(`.nav`)
 CarritoIr.addEventListener("click", e =>{
   e.preventDefault()
   if(e.target.classList.contains(`fa-shopping-cart`)){
-    console.log(e.target.classList.contains(`ver`))
+    
+      cart = localStorage.getItem(`cart`)
+    cart = JSON.parse(cart)
+    if(cart.length === 0){
+      swal.fire({
+        title: "Carrito vacío",
+        text: "Aprovecha 30% OFF Mes de Octubre",
+        buttons: ["Aceptar"],
+      })
+    return false
+    }
     console.log("ir carrito")
     location.assign("./Carrito.html")
   }

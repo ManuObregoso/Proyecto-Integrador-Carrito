@@ -138,11 +138,12 @@ CarritoIr.addEventListener("click", e =>{
     cart = localStorage.getItem(`cart`)
     cart = JSON.parse(cart)
     if(cart.length === 0){
-      Swal.fire(
-        'Carrito Vacío',
-        '40% OFF Aprovecha las Ofertas del Mes de Octubre',
-        'Ok'
-      )
+      swal.fire({
+        title: "Carrito vacío",
+        text: "Aprovecha 30% OFF Mes de Octubre",
+        buttons: ["Aceptar"],
+      })
+    return false
     } else {
       location.assign("./Carrito.html")
     }
