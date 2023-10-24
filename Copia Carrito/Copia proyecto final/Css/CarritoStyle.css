@@ -128,16 +128,23 @@ font-size: 8px;
   @media (min-width: 576px) and (max-width: 768px) {
 
     .carrito{
-      width: 90%;
+      width: 100%;
     }
 
     .InfoCart{
-      width: 90%;
+      width: 100%;
     }
     .descri-prod{
-      width: 90%;
+      width: 100%;
     }
 
-
+    form{
+      width: 100%;
+    }
+    .btn-comprar{
+      width: 80px;
+      height: 40px;
+    
+    }
 
   }
